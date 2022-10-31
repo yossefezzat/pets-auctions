@@ -3,7 +3,6 @@ import { getModelToken } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Model } from 'mongoose';
 import { BidsService } from '../bids.service';
-import { generalized_second_price } from '../helpers/bidWinner';
 import { Bid } from '../schemas/bid.schema';
 
 class NoErrorThrownError extends Error {}

@@ -1,0 +1,23 @@
+services:
+  mongodb:
+    ports:
+      - "27017:27017"
+    image: mongo:latest
+    volumes:
+      - "mongodb-data:/data/db"
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - .:/app
+    env_file:
+    - .env
+    command: yarn run start:dev 
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb-data:

@@ -20,7 +20,6 @@ export class BidsService {
   async listAllBids(petId: string, gsp: string) {
     let bids = await this.bidModel.find({ petId });
     if (gsp === 'winner') {
-      console.log(bids);
       bids = await generalized_second_price(bids);
     }
     return bids;

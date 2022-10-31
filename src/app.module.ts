@@ -6,10 +6,11 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AuthMiddleware } from './middlewares/auth.middleware';
 import { PetOwnerMiddleware } from './middlewares/petOwner.middleware';
 import { ConfigModule } from '@nestjs/config';
+import { validate } from './env.validation';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({ validate }),
     MongooseModule.forRoot(
       `${process.env.DATABASE_HOST}:${process.env.DATABASE_PORT}/${process.env.DATABASE_NAME}`,
     ),

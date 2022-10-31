@@ -79,24 +79,26 @@ Http Request: <code>http://localhost:4000/bid/{petId}/winner</code>
 <br>
 
 <pre>
-<code>[
-{
-"name": "sara",
-"value": 150
-},
-{
-"name": "john dear",
-"value": 150
-},
-{
-"name": "john zakria",
-"value": -1 => 'lost'
-},
+<code>
+[
+    {
+      "name": "sara",
+      "value": 150
+    },
+    {
+      "name": "john dear",
+      "value": 150
+    },
+    {
+      "name": "john zakria",
+      "value": -1 => 'lost'
+    },
 ]
 </code>
 </pre>
 
 <br>
+
 #### POST a bid by a user to a certain pet
 
 <br>
@@ -116,7 +118,6 @@ Request Body:
 
 <br>
 Response:
-
 <pre>
 <code>
     {

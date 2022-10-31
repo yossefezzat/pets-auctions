@@ -75,6 +75,8 @@ Response:
 
 Http Request: <code>http://localhost:4000/bid/{petId}/winner</code>
 <br>
+
+<pre>
 <code>[
 {
 "name": "sara",
@@ -88,8 +90,8 @@ Http Request: <code>http://localhost:4000/bid/{petId}/winner</code>
 "name": "john zakria",
 "value": -1 => 'lost'
 },
-]</code>
-
+]
+</code>
 <pre>
 
 <br>
@@ -109,8 +111,10 @@ Request Body:
 }
 </code>
 <pre>
+
 <br>
 Response:
+
 <pre>
 <code>
     {

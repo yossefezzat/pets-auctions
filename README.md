@@ -57,23 +57,23 @@ Response:
 <pre>
 <code>
 [
-         {
-            "name": "john zakria",
-            "value": 150
-        },
-        {
-            "name": "john dear",
-            "value": 150
-        },
-        {
-            "name": "sara",
-            "value": 500
-        },
+  {
+    "name": "john zakria",
+    "value": 150
+  },
+  {
+    "name": "john dear",
+    "value": 150
+  },
+  {
+    "name": "sara",
+    "value": 500
+  },
 ]
 </code>
 </pre>
 
-##### If you add a {winner} params to the endpoint, Generalized-second-price auction applied to the data.
+##### If you add a {winner} params to the endpoint, Generalized-second-price (GSP) auction applied to the data.
 
 Http Request: <code>http://localhost:4000/bid/{petId}/winner</code>
 <br>
@@ -81,18 +81,18 @@ Http Request: <code>http://localhost:4000/bid/{petId}/winner</code>
 <pre>
 <code>
 [
-    {
-      "name": "sara",
-      "value": 150
-    },
-    {
-      "name": "john dear",
-      "value": 150
-    },
-    {
-      "name": "john zakria",
-      "value": -1 => 'lost'
-    },
+  {
+    "name": "sara",
+    "value": 150
+  },
+  {
+    "name": "john dear",
+    "value": 150
+  },
+  {
+    "name": "john zakria",
+    "value": -1 => 'lost'
+  },
 ]
 </code>
 </pre>
@@ -110,8 +110,8 @@ Request Body:
 <pre>
 <code>
 {
-    "name": "Adam youssef",
-    "value": 344
+  "name": "Adam youssef",
+  "value": 344
 }
 </code>
 </pre>
@@ -120,9 +120,9 @@ Request Body:
 Response:
 <pre>
 <code>
-    {
-      "name": "Adam youssef",
-      "value": 344
-    }
+{
+  "name": "Adam youssef",
+  "value": 344
+}
 </code>
 </pre>

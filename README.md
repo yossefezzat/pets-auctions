@@ -55,7 +55,8 @@ Header: ['api_key'] = {owner of pet apiKey}
 <br>
 Response:
 <pre>
-<code>[
+<code>
+[
          {
             "name": "john zakria",
             "value": 150
@@ -68,7 +69,8 @@ Response:
             "name": "sara",
             "value": 500
         },
-]</code>
+]
+</code>
 <pre>
 
 ##### If you add a {winner} params to the endpoint, Generalized-second-price auction applied to the data.

@@ -8,7 +8,9 @@ export class AuthMiddleware implements NestMiddleware {
   use(req: any, res: Response, next: NextFunction) {
     const apiKey = req.headers.apikey;
     if (!apiKey) {
-      return res.status(401).json({ msg: 'Unauthorized Request' });
+      return res
+        .status(401)
+        .json({ msg: 'Unauthorized Request, apiKey was missing' });
     }
     this.usersService
       .findOneByApiKey(apiKey)

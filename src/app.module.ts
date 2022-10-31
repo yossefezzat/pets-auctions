@@ -23,10 +23,9 @@ import { validate } from './env.validation';
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(AuthMiddleware).forRoutes('pets');
     consumer.apply(AuthMiddleware).forRoutes('bids/:petId');
     consumer.apply(AuthMiddleware, PetOwnerMiddleware).forRoutes({
-      path: 'bids/:petId/:gsp',
+      path: 'bids/:petId/:gsp?',
       method: RequestMethod.GET,
     });
   }

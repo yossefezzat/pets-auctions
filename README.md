@@ -17,10 +17,10 @@ $ yarn install
 
 ```bash
 # watch mode
-$ npm run start:dev
+$ yarn run start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn run start:prod
 ```
 
 ## Test
@@ -30,7 +30,7 @@ $ npm run start:prod
 $ yarn run test
 
 # test coverage
-$ npm run test:cov
+$ yarn run test:cov
 ```
 
 ## Docker

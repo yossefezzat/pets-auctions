@@ -6,9 +6,9 @@ import { CreatePetDto } from './dto/create-pet.dto';
 export class PetsController {
   constructor(private readonly petsService: PetsService) {}
 
-  @Post()
-  create(@Body() createPetDto: CreatePetDto, @Req() req) {
-    createPetDto.ownerId = req.user._id;
-    return this.petsService.create(createPetDto);
-  }
+  // @Post()
+  // create(@Body() createPetDto: CreatePetDto, @Req() req) {
+  //   createPetDto.ownerId = req.user._id;
+  //   return this.petsService.create(createPetDto);
+  // }
 }
